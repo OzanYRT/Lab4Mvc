@@ -1,0 +1,42 @@
+@model Lab4Cities.Models.City
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>City</h4>
+    <hr />
+    <dl class="row">
+        <dt ckass= "col-sm-2">
+            @Html.DisplayNameFor(model => model.CityId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CityId)
+        </dd>
+
+        <dt ckass= "col-sm-2">
+            @Html.DisplayNameFor(model => model.CityName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CityName)
+        </dd>
+
+        <dt ckass= "col-sm-2">
+            @Html.DisplayNameFor(model => model.Population)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Population)
+        </dd>
+
+        <dt ckass= "col-sm-2">
+            @Html.DisplayNameFor(model => model.ProvinceCode)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ProvinceCode)
+        </dd>
+        
+    </dl>
+</div>
